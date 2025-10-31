@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Subhrajit Pradhan | Full-Stack Java Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Particle canvas (background) -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">Subhrajit<span>Pradhan</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Subhrajit Pradhan</span></h1>
+        <h2>Full-Stack Java Developer</h2>
+        <p>
+          I’m a passionate Full-Stack Java Developer, focused on building efficient, user-friendly applications
+          by combining powerful backend systems with dynamic frontend interfaces using technologies like
+          Spring Boot, MySQL, and modern web frameworks.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://github.com/" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:subhrajit6790@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Photo -->
+      <div class="hero-photo-wrapper">
+        <img src="My image.jpg" alt="Subhrajit Pradhan" class="profile-photo" />
+      </div>
+    </div>
+  </section>
+
+    <!-- About (keeps photo on the right) -->
+    <section id="about" class="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm <strong>Subhrajit Pradhan</strong>, a Full-Stack Java Developer dedicated to crafting high-quality,
+            scalable web applications. I work across backend and frontend technologies to create complete solutions that
+            balance performance, usability, and design. I enjoy learning new tools and building meaningful software.
+          </p>
+          <a class="btn resume-btn" href="your-resume-link.pdf" target="_blank">📄 Download Resume</a>
+        </div>
+
+        <div class="about-photo">
+          <!-- smaller/rounded photo for About section (right) -->
+          <img src="My image.jpg" alt="Subhrajit Profile" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+   <div class="skills-grid">
+  <button class="skill-btn">Java</button>
+  <button class="skill-btn">Spring Boot</button>
+  <button class="skill-btn">Hibernate</button>
+  <button class="skill-btn">MySQL</button>
+  <button class="skill-btn">React</button>
+  <button class="skill-btn">Node.js</button>
+  <button class="skill-btn">Express.js</button>
+  <button class="skill-btn">MongoDB</button>
+  <button class="skill-btn">REST APIs</button>
+  <button class="skill-btn">Git & GitHub</button>
+  <button class="skill-btn">HTML / CSS / JS</button>
+  <button class="skill-btn">Docker (basic)</button>
+</div>
+
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>AI-Driven Smart Waste Management in Agriculture</h3>
+          <p>
+            A smart system for agricultural waste classification and routing. Frontend built with React; backend with
+            Java, Spring Boot, MySQL, and Hibernate. (Link to repo / demo will be added.)
+          </p>
+          <div class="project-meta">
+            <span>React • Java • Spring Boot • MySQL • Hibernate</span>
+            <a href="#" class="btn small">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Library Management System</h3>
+          <p>
+            Full-stack library management app using React frontend and Node.js/Express + MongoDB backend. CRUD, auth,
+            and real-time updates. (Link to repo / demo will be added.)
+          </p>
+          <div class="project-meta">
+            <span>React • Node.js • Express • MongoDB</span>
+            <a href="#" class="btn small">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Let's collaborate on something amazing — reach out and say hi!</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <strong>Email</strong>
+          <a href="mailto:subhrajit6790@gmail.com">subhrajit6790@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/feed/" target="_blank">linkedin.com/in/subhrajit</a>
+        </div>
+        <div class="contact-card">
+          <strong>GitHub</strong>
+          <a href="https://github.com/" target="_blank">github.com/subhrajit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Subhrajit Pradhan • Full-Stack Java Developer</p>
+  </footer>
+</body>
+</html>
