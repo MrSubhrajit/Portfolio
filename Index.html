@@ -6,18 +6,20 @@
   <title>Subhrajit Pradhan | Full-Stack Java Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Particle canvas (background) -->
+  <!-- Particle Canvas Background -->
   <canvas id="bg-canvas"></canvas>
 
-  <!-- Header / Navbar -->
+  <!-- Navbar -->
   <header class="site-header">
     <nav class="navbar">
       <div class="logo">Subhrajit<span>Pradhan</span></div>
-      <ul class="nav-links">
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -26,90 +28,95 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-<main>
-  <section class="hero">
-    <div class="hero-inner">
-      <!-- Left: Text -->
-      <div class="hero-text">
-        <h1>Hi, I'm <span>Subhrajit Pradhan</span></h1>
-        <h2>Full-Stack Java Developer</h2>
-        <p>
-          I’m a passionate Full-Stack Java Developer, focused on building efficient, user-friendly applications
-          by combining powerful backend systems with dynamic frontend interfaces using technologies like
-          Spring Boot, MySQL, and modern web frameworks.
-        </p>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Subhrajit Pradhan</span></h1>
+          <h2>Full-Stack Java Developer</h2>
+          <p>
+            I'm a passionate Full-Stack Java Developer, focused on building efficient, user-friendly applications
+            by combining powerful backend systems with dynamic frontend interfaces using technologies like
+            Spring Boot, MySQL, React, and more.
+          </p>
 
-        <!-- Social Icons -->
-        <div class="social-icons">
-          <a href="https://github.com/" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:subhrajit6790@gmail.com" title="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="https://github.com/MrSubhrajit" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/subhrajit-pradhan-8b9002308/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:subhrajit6790@gmail.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrapper">
+          <img src="img.jpg" alt="Subhrajit Pradhan" class="profile-photo" />
         </div>
       </div>
+    </section>
 
-      <!-- Right: Profile Photo -->
-      <div class="hero-photo-wrapper">
-        <img src="My image.jpg" alt="Subhrajit Pradhan" class="profile-photo" />
-      </div>
-    </div>
-  </section>
-
-    <!-- About (keeps photo on the right) -->
+    <!-- About Section -->
     <section id="about" class="about">
       <div class="about-grid">
         <div class="about-text">
           <h2>About Me</h2>
           <p>
-            Hello! I'm <strong>Subhrajit Pradhan</strong>, a Full-Stack Java Developer dedicated to crafting high-quality,
-            scalable web applications. I work across backend and frontend technologies to create complete solutions that
-            balance performance, usability, and design. I enjoy learning new tools and building meaningful software.
+            Hello! I'm <strong>Subhrajit Pradhan</strong>, a Full-Stack Java Developer dedicated to crafting scalable,
+            high-performance web applications. I bridge the gap between backend logic and frontend design, focusing
+            on clean architecture, intuitive UI, and efficient databases.
           </p>
           <a class="btn resume-btn" href="your-resume-link.pdf" target="_blank">📄 Download Resume</a>
         </div>
 
         <div class="about-photo">
-          <!-- smaller/rounded photo for About section (right) -->
           <img src="My image.jpg" alt="Subhrajit Profile" />
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-   <div class="skills-grid">
-  <button class="skill-btn">Java</button>
-  <button class="skill-btn">Spring Boot</button>
-  <button class="skill-btn">Hibernate</button>
-  <button class="skill-btn">MySQL</button>
-  <button class="skill-btn">React</button>
-  <button class="skill-btn">Node.js</button>
-  <button class="skill-btn">Express.js</button>
-  <button class="skill-btn">MongoDB</button>
-  <button class="skill-btn">REST APIs</button>
-  <button class="skill-btn">Git & GitHub</button>
-  <button class="skill-btn">HTML / CSS / JS</button>
-  <button class="skill-btn">Docker (basic)</button>
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <button class="skill-btn">Java</button>
+        <button class="skill-btn">Spring Boot</button>
+        <button class="skill-btn">Hibernate</button>
+        <button class="skill-btn">MySQL</button>
+        <button class="skill-btn">JDBC / JPA</button>
+        <button class="skill-btn">REST APIs</button>
+        <button class="skill-btn">React</button>
+        <button class="skill-btn">HTML5</button>
+        <button class="skill-btn">CSS3</button>
+        <button class="skill-btn">JavaScript (ES6+)</button>
+        <button class="skill-btn">Node.js</button>
+        <button class="skill-btn">Express.js</button>
+        <button class="skill-btn">MongoDB</button>
+        <button class="skill-btn">Git & GitHub</button>
+        <button class="skill-btn">Docker (Basic)</button>
+        <button class="skill-btn">Postman</button>
+        <button class="skill-btn">VS Code / IntelliJ</button>
+        <button class="skill-btn">Data Structures & Algorithms</button>
+      </div>
+    </section>
 
-
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <h2>Projects</h2>
       <div class="project-grid">
         <article class="project-card">
           <h3>AI-Driven Smart Waste Management in Agriculture</h3>
           <p>
-            A smart system for agricultural waste classification and routing. Frontend built with React; backend with
-            Java, Spring Boot, MySQL, and Hibernate. (Link to repo / demo will be added.)
+            An intelligent system for agricultural waste classification using AI and IoT.
+            Built with React frontend, Spring Boot backend, and MySQL database.
           </p>
           <div class="project-meta">
-            <span>React • Java • Spring Boot • MySQL • Hibernate</span>
+            <span>React • Java • Spring Boot • MySQL • AI • IoT</span>
             <a href="#" class="btn small">View Project</a>
           </div>
         </article>
@@ -117,8 +124,7 @@
         <article class="project-card">
           <h3>Library Management System</h3>
           <p>
-            Full-stack library management app using React frontend and Node.js/Express + MongoDB backend. CRUD, auth,
-            and real-time updates. (Link to repo / demo will be added.)
+            A full-stack web app to manage library operations — built using React, Node.js, Express, and MongoDB with authentication and CRUD features.
           </p>
           <div class="project-meta">
             <span>React • Node.js • Express • MongoDB</span>
@@ -128,23 +134,21 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p>Let's collaborate on something amazing — reach out and say hi!</p>
-      <div class="contact-cards">
-        <div class="contact-card">
-          <strong>Email</strong>
-          <a href="mailto:subhrajit6790@gmail.com">subhrajit6790@gmail.com</a>
-        </div>
-        <div class="contact-card">
-          <strong>LinkedIn</strong>
-          <a href="https://www.linkedin.com/feed/" target="_blank">linkedin.com/in/subhrajit</a>
-        </div>
-        <div class="contact-card">
-          <strong>GitHub</strong>
-          <a href="https://github.com/" target="_blank">github.com/subhrajit</a>
-        </div>
+      <p>Let's collaborate — reach out to connect with me!</p>
+      <div class="social-icons">
+            <a href="https://github.com/MrSubhrajit" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/subhrajit-pradhan-8b9002308/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:subhrajit6790@gmail.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
       </div>
     </section>
   </main>
